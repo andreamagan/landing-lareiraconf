@@ -1,0 +1,91 @@
+.tickets {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  gap: 2rem;
+
+  & .left-content {
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 0.5rem;
+  }
+
+  & .header {
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5rem solid var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  & .isotipo::after {
+    display: inline-block;
+    content: "";
+    background-image: url("/lareira-isotipo.svg");
+    background-size: 3rem 3rem;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 1.6rem;
+    left: 29rem;
+  }
+
+  & .event-info {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    font-family: var(--logo-font);
+    text-transform: uppercase;
+  }
+
+  & .ticket-info {
+    display: flex;
+    flex-direction: column;
+
+    & .main-title {
+      color: var(--accent);
+      font-size: 4rem;
+    }
+
+    & .features {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+
+  & .ticket-container {
+    position: relative;
+  }
+
+  & .qr-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .qr {
+    border: 0.5rem solid var(--secondary);
+    max-width: 300px;
+  }
+
+  & .ticket {
+    max-width: 320px;
+    position: absolute;
+    top: -7rem;
+    right: 1rem;
+    rotate: 20deg;
+  }
+}

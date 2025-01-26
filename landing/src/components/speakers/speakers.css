@@ -1,0 +1,48 @@
+.speakers {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  & .speakers-title {
+    font-size: 2rem;
+    color: var(--accent);
+    text-align: center;
+  }
+
+  & .speaker-card {
+    padding: 1rem;
+  }
+
+  & .speaker-card .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 0.5rem solid var(--secondary);
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+
+  & .speaker-card .info {
+    display: flex;
+    flex-direction: column;
+
+    & .name {
+      margin: 0;
+    }
+
+    & .role {
+      margin: 0;
+    }
+  }
+
+  & .avatar {
+    width: 100%;
+    object-fit: contain;
+    max-height: 150px;
+    max-width: 150px;
+    border: 0.5rem solid var(--secondary);
+  }
+}

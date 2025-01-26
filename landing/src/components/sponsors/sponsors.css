@@ -1,0 +1,17 @@
+.sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--secondary);
+  border-top: 0.5rem solid var(--secondary);
+
+  & .sponsor-image {
+    width: 100px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+  }
+}
