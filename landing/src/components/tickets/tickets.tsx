@@ -14,7 +14,7 @@ const Tickets = () => {
           </a>
         </div>
         <div className="event-info">
-          <span className="event-date">12.05.2025</span>
+          <span className="event-date">22.03.2025</span>
           <span>|</span>
           <span className="event-place">A Coruña</span>
         </div>
